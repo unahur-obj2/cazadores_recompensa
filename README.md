@@ -39,7 +39,7 @@ Si un cazador no puede capturar al prófugo entonces al menos lo intimida.
 
 ### Consecuencias de la intimidación
 
-- El nivel de inocencia del prófugo disminuye en 5 unidades (se lo considera más culpable)
+- El nivel de inocencia del prófugo disminuye en 2 unidades (se lo considera más culpable y nunca puede ser negativa)
 - Además, según el tipo de cazador:
   - **Cazador Urbano**: el prófugo deja de ser nervioso.
   - **Cazador Rural**: el prófugo se vuelve nervioso.
@@ -95,5 +95,6 @@ public interface IProfugo {
 
     void reducirHabilidad();
 
+    void disminuirInocencia();
 }
 ```

@@ -43,4 +43,9 @@ public class Profugo implements IProfugo {
         habilidad = Integer.max(0, habilidad - 5);
     }
 
+    @Override
+    public void disminuirInocencia() {
+        inocencia = Integer.max(0, inocencia - 2);
+    }
+
 }

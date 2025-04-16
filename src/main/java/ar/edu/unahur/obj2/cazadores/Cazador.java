@@ -31,7 +31,12 @@ public abstract class Cazador {
 
     public abstract Boolean puedeCapturarseEspecifica(IProfugo profugo);
 
-    public abstract void intimidar(IProfugo profugo);
+    public abstract void intimidarParticular(IProfugo profugo);
+
+    public void intimidar(IProfugo profugo) {
+        profugo.disminuirInocencia();
+        this.intimidarParticular(profugo);
+    }
 
     public void procesoCaptura(Zona zona) {
         List<IProfugo> intimidados = new ArrayList<>();

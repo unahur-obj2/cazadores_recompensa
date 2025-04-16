@@ -14,7 +14,7 @@ public class CazadorUrbano extends Cazador {
     }
 
     @Override
-    public void intimidar(IProfugo profugo) {
+    public void intimidarParticular(IProfugo profugo) {
         profugo.dejarDeEstarNervioso();
     }
 

@@ -37,4 +37,11 @@ abstract public class ProfugoDecorator implements IProfugo {
     public void reducirHabilidad() {
         profugo.reducirHabilidad();
     }
+
+    @Override
+    public void disminuirInocencia() {
+        profugo.disminuirInocencia();
+        ;
+    }
+
 }

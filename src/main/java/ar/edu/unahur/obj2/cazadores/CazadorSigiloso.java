@@ -13,7 +13,7 @@ public class CazadorSigiloso extends Cazador {
     }
 
     @Override
-    public void intimidar(IProfugo profugo) {
+    public void intimidarParticular(IProfugo profugo) {
         profugo.reducirHabilidad();
     }
 }
